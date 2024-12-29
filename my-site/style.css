@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background: linear-gradient(117deg, rgba(43, 255, 0, 1) 0%, rgba(24, 0, 219, 1) 100%);
+   background-color: hsla(240, 100%, 50%, 0.3);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;    
+}
+
+.body-container {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 63%;
+}
+
+#header-logo {
+    width: 1.8em;
+    margin: 0 0.7em 0 0;
+    
+}
+
+img {
+    width: 2em;
+}
+
+.page {
+    margin-top: 2em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+ 
+   
+    
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.263);
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em 0 0 0;
+}
+
+.top-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.bot-title {
+    background-color: rgba(0, 0, 0, 0.142);
+    padding: 1em;
+}
+
+.header-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+}
+
+.header-text p {
+    margin-left: 0.2em;
+}
+
+.txtMessage {
+    font-size: 1em;
+    margin: 1em 0 0 0;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2em;
+    height: 2.2em;
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 0.3em;
+    margin: 0 0.5em 0.5em;
+    font-weight: bolder;
+}
+
+.qbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qbox label{
+   margin-bottom: 0.5em;
+   color: white;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em;
+    padding-top: 1.3em;
+    border-radius: 0em;
+    width: 100%;
+    background-color: rgb(6, 51, 198);
+    font-size: 1.5em;
+    border-radius: 0.2em;
+    margin-top: 1em;
+    border: 3px solid yellow;
+
+}
+
+.showGrade {
+    background-color: yellow;
+    width: 100%;
+    padding: 1em;
+    display: none;
+}
+
+.grade-result {
+}
+
+.show-grade-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grade-result {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-results {
+    margin-left: 1em;
+}
+
+
+.result-icon img {
+    height: 3em;
+    width: 3em;
+}
+
+
+.bot-showGrade {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   
+}
+
+
+
+.input-subj {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+    background-color: rgb(222, 222, 0);
+    padding: 1em 0;
+    
+}
+
+.input-subj-button {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnCancelAdd, .btnAdd {
+    outline: 0;
+    color: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px  solid rgba(8, 1, 1, 0.3);
+}
+
+button.btnAdd {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.btnCancelAdd {
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+    margin: 0.3em;
+}
+
+button.btnAdd:hover {
+    background-color: green;
+    color: white;
+}
+
+button.btnCancelAdd:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+.txtSubj {
+    width: 15em;
+    font-size: 1em;
+    margin: 1em;    
+}
+
+
+.addedMessage {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.addedMessage p {
+    font-size: 0.7em;
+    color: green;
+}
+
+
+.show-grading-system {
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    padding: 1em;
+    display: none;
+    
+    
+}
+
+.show-grading-system div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.show-grading-system p, h4{
+    font-size: 0.8em;
+    margin: 0.5em;
+    color: rgba(0, 0, 0, 0.863);
+}
+
+.addToGWA {
+    background-color: rgb(64, 248, 64);
+    color: white;
+    padding: 0.5em 1em;
+    border: 0;
+    margin: 0;
+
+}
+
+.buttonShowGS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-top: 2em;
+}
+
+button.btnShowGS {
+    font-size: 0.7em;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnClick {
+    padding: 0.5em 1.4em;
+    margin: 1.5em 0.5em 1em 1em;
+    font-size: 1.4em;
+    outline: 0;
+    border: 0;
+    background: #388DC5;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px  solid rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+    box-shadow: 0px 0px 23px 24px rgba(68, 255, 0, 0.15);
+}
+
+button.btnClick:hover {
+    background: rgb(175,7,30);
+    background: linear-gradient(79deg, rgba(175,7,30,1) 0%, rgba(0,51,255,1) 100%);
+    color: yellow;
+    box-shadow: 0px;
+}
+
+
+
+
+.about-grade {
+    width: 100%;
+}
+
+#btnRestart {
+    display: none;
+    width: 1em;
+    padding: 0;
+    height: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: rgb(0, 126, 205);
+    border-radius: 50%;
+    border: 1px  solid rgba(255, 255, 255, 0.3);
+    transition: 1s;
+
+}
+
+#btnRestart:hover {
+    background: rgb(175,7,30);
+    background: linear-gradient(79deg, rgba(175,7,30,1) 0%, rgba(0,51,255,1) 100%);
+    rotate: 150deg;
+    transition: 1s;
+}
+
+.gwa-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 0.8em; 
+    outline: 0;
+    border: 0;
+    border-radius: 1em;
+    background-color: aliceblue;
+    margin: 1em 0;
+    display: none;
+}
+
+.gwa-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+.gwa-title {
+    text-align: left;
+}
+
+.gwa-equivalent {
+    text-align: right;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px  solid rgba(0, 0, 0, 0.221);
+    padding: 0.5em 0;
+    
+}
+
+.course-lists {
+    
+}
+
+.reset-wrapper {
+    flex-direction: row;
+    justify-content: flex-end;
+    display: none;
+
+}
+
+.reset-wrapper button {
+    font-size: 0.9em;
+    color: white;
+    background-color: transparent;
+    padding: 1em;
+    border: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    input {
+        width: 3.5em;
+        height: 1.5em;
+       
+    }
+}
+
+@media only screen and (min-width: 550px){
+    input {
+        width: 4em;
+        height: 1.5em;
+       
+    }
+}
+
+@media only screen and (min-width: 540px){
+    input {
+        width: 4em;
+        height: 1.5em;
+       
+    }
+}
+
+@media only screen and (min-width: 590px){
+    input {
+        width: 5em;
+        height: 1.5em;
+       
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .body-container {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15.5%;
+    }
+
+    .header-title {
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-title {
+        margin: 0 0.5em 0 0;
+        font-size: 2em;
+    }
+
+    .bot-title {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .page {
+        padding: 0 1em;
+        margin-top: 2em;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px  solid rgba(255, 255, 255, 0.3);
+    }
+
+    input {
+        width: 3.2em;
+        height: 1.5em;
+       
+    }
+
+    .inputs {
+        border: 3px solid rgb(255, 255, 255);
+    }
+
+    .input-subj {
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+        
+    }
+
+    #addToGWA {
+        background-color: rgb(64, 248, 64);
+        color: white;
+        padding: 1em;
+        border: 0;
+    }
+
+    .btnClick {
+        margin-bottom: 2em;
+    }
+}
+
+
+
+
+

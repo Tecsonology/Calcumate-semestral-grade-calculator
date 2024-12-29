@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CalcuMate</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="https://cdn.icon-icons.com/icons2/272/PNG/512/Calculator_30001.png" type="image/x-icon">
+      </head>
+<body>
+    <div class="body-container">
+        <div class="page">
+    
+   
+            <div class="header-text">
+                <div class="header-title">
+                    <div class="top-title">
+                        <img src="https://cdn.icon-icons.com/icons2/272/PNG/512/Calculator_30001.png" alt="" id="header-logo">
+                    <h3>CalcuMate</h3>
+                    </div>
+                    <div class="bot-title">
+                        <p>Semestral Grade Calculator</p>
+                    </div>
+                </div>
+                <p class="txtMessage">Please input your grades from Prelim to Final.</p>
+            </div>
+            <div class="inputs">
+                <div class="qbox">
+                    <label for="g1">Prelim</label>
+                <input type="text" name="g1" id="txtG1" class="grade-input">
+                </div>
+                <div class="qbox">
+                    <label for="g1">Midterm</label>
+                <input type="text" name="g2" id="txtG2" class="grade-input">
+                </div>
+                <div class="qbox">
+                    <label for="g1">Prefinal</label>
+                <input type="text" name="g3" id="txtG3" class="grade-input">
+                </div>
+                <div class="qbox">
+                    <label for="g1">Final</label>
+                <input type="text" name="g4" id="txtG4" class="grade-input">
+                </div>
+            </div>
+        
+            <div class="about-grade">
+                <div class="showGrade">
+                    <div class="show-grade-top">
+                        <div class="grade-result">
+                            <div class="result-icon">
+                                <img src="https://cdn3.iconfinder.com/data/icons/flat-rounded-4/50/362-512.png" alt="">
+                            </div>
+                            <div class="text-results">
+                                <h3 class="txtGrade">Final Grade:</h3>
+                            <h2 class="txtGEquiv"></h2>
+                            </div>
+                        </div>
+                        <div class="bot-showGrade">
+                        </div>
+                    </div>
+                    <div class="input-subj">
+                        <p>Course Subject:</p>
+                        <input type="text" class="txtSubj">
+                        <div class="input-subj-button">
+                            <button class="btnAdd">Add to GWA</button>
+                            <button class="btnCancelAdd">x</button>
+                        </div>
+                    </div>
+                    <div class="addedMessage">
+                        <p>✅ Added to GWA</p>
+                    </div>
+                    <div class="buttonShowGS">
+                        <button class="btnShowGS">show grading system 🡣</button>
+                        <button class="addToGWA" id="mAddToGWA">Create GWA</button>
+                    </div>
+            
+                </div>
+                <div class="show-grading-system">
+                    <h4>Grading System</h4>
+                    <div class="quarters">
+                        <p>Prelim 20%</p>
+                        <p>Midterm 20%</p>
+                        <p>Prefinal 20%</p>
+                        <p>Final 40%</p>
+                        <p>Total: 100%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btnClick">Compute My Grade</button>
+                <img src="https://www.svgrepo.com/show/292206/repeat.svg" alt="" id="btnRestart">
+            </div>
+        
+            <div class="gwa-page">
+                <div class="gwa-top">
+                    <h1 class="gwa-title">GWA</h1>
+                    <h1 class="gwa-equivalent"></h1>
+                </div>
+                <div class="course-lists">
+                    <div class="course-card">
+                        
+                    </div>
+                </div>
+               
+                
+            </div>
+            <div class="reset-wrapper">
+                <button class="btnReset">Reset GWA</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
